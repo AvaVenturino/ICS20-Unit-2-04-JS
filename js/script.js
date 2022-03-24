@@ -6,7 +6,7 @@
 
 'use strict'
 /**
- * This function gets users address and shows it back to user.
+ * This function calculates the area of a triangle.
  */
 function calculate () {
   // input
