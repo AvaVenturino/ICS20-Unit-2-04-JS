@@ -4,15 +4,17 @@
 // Created on: Mar 2022
 // This file contains the JS functions for index.html
 
+'use strict'
 /**
  * This function gets users address and shows it back to user.
  */
-function enterClicked() {
+function calculate () {
   // input
-  const userStreetNumber = parseInt(document.getElementById("number-entered").value)
-  const streetName = document.getElementById("street-entered").value
-
+  const base = parseInt(document.getElementById("base-of-triange").value)
+  const height = parseInt(document.getElementById("height-of triangle").value)
+  // process
+  const area = (base * height)/2
   // output
-  document.getElementById("address").innerHTML =
-    "The address is: " + userStreetNumber + " " + streetName + "."
+  document.getElementById("area").innerHTML =
+    "The area is: " + area + ' cm²' 
 }
